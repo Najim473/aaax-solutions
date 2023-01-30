@@ -1,0 +1,123 @@
+@font-face {
+    font-family: myFont;
+    src: url(../fonts/lion_king.ttf);
+}
+
+$primary-color: #1d2958;
+$font-color: "#ffffff";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    .container {
+        nav {
+            background: $primary-color;
+            // background: red !important;
+            display: flex;
+            align-items: center;
+            // font-family: myFont;
+            font-family: myFont;
+            justify-content: space-evenly;
+
+            .logo {
+                padding: 15px;
+
+                a {
+                    text-decoration: none;
+                    display: flex;
+                    align-items: center;
+
+                    img {
+                        width: 60px;
+                    }
+
+                    p {
+                        padding-left: 10px;
+                        font-size: 30px;
+                        color: #fff;
+
+                        strong {
+                            color: #ffffff;
+                        }
+                    }
+                }
+            }
+
+            ul {
+                display: flex;
+                color: #ffffff;
+                list-style: none;
+                align-items: center;
+
+                li {
+                    font-size: 15px;
+                    position: relative;
+
+                    // &:before {
+                    //     content: "\00b0";
+                    //     font-size: 40px;
+                    //     line-height: -304px;
+                    //     vertical-align: middle;
+                    // }
+                    // background: #000;
+                    z-index: 1;
+                    padding: 34px 0;
+
+                    a {
+                        text-decoration: none;
+                        color: #ffffff;
+                        margin: 20px !important;
+                    }
+
+                    .subBar {
+                        display: none;
+                        // display: block;
+                        z-index: -1;
+                        letter-spacing: 1px;
+                        margin-top: 36px;
+                        position: absolute;
+                        width: 300px;
+                        height: 220px;
+                        left: -100px;
+                        box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+                        padding: 10px 0;
+
+                        li {
+                            text-align: center;
+                            padding: 10px 0;
+                            cursor: pointer;
+
+                            &:first-child {
+                                padding: 15px;
+                            }
+
+                            a {
+                                text-decoration: none;
+                                color: $primary-color;
+                            }
+                        }
+                    }
+
+                    &:hover>.subBar {
+                        display: block;
+                    }
+                }
+            }
+
+            .contactNumber {
+                p {
+                    font-size: 20px;
+                    color: #ffffff;
+
+                    strong {
+                        color: #ec1e67;
+                    }
+                }
+            }
+        }
+    }
+}

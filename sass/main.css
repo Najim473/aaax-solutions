@@ -1,0 +1,87 @@
+@font-face {
+  font-family: myFont;
+  src: url(../fonts/lion_king.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body .container nav {
+  background: #1d2958;
+  display: flex;
+  align-items: center;
+  font-family: myFont;
+  justify-content: space-evenly;
+}
+body .container nav .logo {
+  padding: 15px;
+}
+body .container nav .logo a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+body .container nav .logo a img {
+  width: 60px;
+}
+body .container nav .logo a p {
+  padding-left: 10px;
+  font-size: 30px;
+  color: #fff;
+}
+body .container nav .logo a p strong {
+  color: #ffffff;
+}
+body .container nav ul {
+  display: flex;
+  color: #ffffff;
+  list-style: none;
+  align-items: center;
+}
+body .container nav ul li {
+  font-size: 15px;
+  position: relative;
+  z-index: 1;
+  padding: 34px 0;
+}
+body .container nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  margin: 20px !important;
+}
+body .container nav ul li .subBar {
+  display: none;
+  z-index: -1;
+  letter-spacing: 1px;
+  margin-top: 36px;
+  position: absolute;
+  width: 300px;
+  height: 220px;
+  left: -100px;
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+  padding: 10px 0;
+}
+body .container nav ul li .subBar li {
+  text-align: center;
+  padding: 10px 0;
+  cursor: pointer;
+}
+body .container nav ul li .subBar li:first-child {
+  padding: 15px;
+}
+body .container nav ul li .subBar li a {
+  text-decoration: none;
+  color: #1d2958;
+}
+body .container nav ul li:hover > .subBar {
+  display: block;
+}
+body .container nav .contactNumber p {
+  font-size: 20px;
+  color: #ffffff;
+}
+body .container nav .contactNumber p strong {
+  color: #ec1e67;
+}/*# sourceMappingURL=main.css.map */
