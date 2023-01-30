@@ -85,6 +85,8 @@ body {
                         left: -100px;
                         box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
                         padding: 10px 0;
+                        top: 100px;
+                        transition: .5s ease-in-out;
 
                         li {
                             text-align: center;
@@ -104,6 +106,7 @@ body {
 
                     &:hover>.subBar {
                         display: block;
+                        top: 48px;
                     }
                 }
             }

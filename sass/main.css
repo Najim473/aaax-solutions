@@ -62,6 +62,8 @@ body .container nav ul li .subBar {
   left: -100px;
   box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
   padding: 10px 0;
+  top: 100px;
+  transition: 0.5s ease-in-out;
 }
 body .container nav ul li .subBar li {
   text-align: center;
@@ -77,6 +79,7 @@ body .container nav ul li .subBar li a {
 }
 body .container nav ul li:hover > .subBar {
   display: block;
+  top: 48px;
 }
 body .container nav .contactNumber p {
   font-size: 20px;
