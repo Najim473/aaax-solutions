@@ -86,7 +86,9 @@ body {
                         box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
                         padding: 10px 0;
                         top: 100px;
-                        transition: .5s ease-in-out;
+                        // transition: all .25s ease-in;
+                        animation-name: subBarAni;
+                        animation-duration: .5s;
 
                         li {
                             text-align: center;
@@ -95,11 +97,14 @@ body {
 
                             &:first-child {
                                 padding: 15px;
+
                             }
 
                             a {
                                 text-decoration: none;
                                 color: $primary-color;
+                                padding: 15px;
+
                             }
                         }
                     }
@@ -122,5 +127,24 @@ body {
                 }
             }
         }
+    }
+}
+
+// KEYFRAMS
+@keyframes subBarAni {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    50% {
+        // transform: translateY(30px);
+        // opacity: 1;
+        opacity: .5;
+    }
+
+    100% {
+        // transform: translateY(-10px);
+        opacity: 1;
     }
 }
