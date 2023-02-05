@@ -88,7 +88,7 @@ body {
                         top: 100px;
                         // transition: all .25s ease-in;
                         animation-name: subBarAni;
-                        animation-duration: .5s;
+                        animation-duration: 0.5s;
 
                         li {
                             text-align: center;
@@ -97,14 +97,12 @@ body {
 
                             &:first-child {
                                 padding: 15px;
-
                             }
 
                             a {
                                 text-decoration: none;
                                 color: $primary-color;
                                 padding: 15px;
-
                             }
                         }
                     }
@@ -140,7 +138,7 @@ body {
     50% {
         // transform: translateY(30px);
         // opacity: 1;
-        opacity: .5;
+        opacity: 0.5;
     }
 
     100% {
