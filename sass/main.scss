@@ -212,3 +212,12 @@ body {
 }
 
 // FOR MOBILE DEVICE 
+@media only screen and (max-width:949px) {
+    body {
+        .container {
+            nav {
+                display: none;
+            }
+        }
+    }
+}
