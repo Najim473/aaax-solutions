@@ -93,6 +93,9 @@ body .container nav .contactNumber p {
 body .container nav .contactNumber p strong {
   color: #ec1e67;
 }
+body .container .mobileSidebar {
+  display: none;
+}
 
 @-webkit-keyframes subBarAni {
   0% {
@@ -159,5 +162,24 @@ body .container nav .contactNumber p strong {
 @media only screen and (max-width: 949px) {
   body .container nav {
     display: none;
+  }
+  body .container .mobileSidebar {
+    display: block;
+  }
+  body .container .sidebar {
+    background: #1d2958;
+  }
+  body .container .sidebar .logo a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+  body .container .sidebar .logo a img {
+    width: 50px;
+  }
+  body .container .sidebar .logo a p {
+    font-size: 30px;
+    color: #ffffff;
+    margin-left: 15px;
   }
 }/*# sourceMappingURL=main.css.map */
