@@ -24,7 +24,7 @@ body {
             justify-content: space-evenly;
 
             .logo {
-                padding: 15px;
+                padding: 15px 0;
 
                 a {
                     text-decoration: none;
@@ -54,7 +54,7 @@ body {
                 align-items: center;
 
                 li {
-                    font-size: 15px;
+                    font-size: 18px;
                     position: relative;
 
                     // &:before {
@@ -94,6 +94,7 @@ body {
                             text-align: center;
                             padding: 10px 0;
                             cursor: pointer;
+                            font-size: 15px;
 
                             &:first-child {
                                 padding: 15px;
@@ -116,7 +117,7 @@ body {
 
             .contactNumber {
                 p {
-                    font-size: 20px;
+                    font-size: 25px;
                     color: #ffffff;
 
                     strong {
@@ -146,3 +147,68 @@ body {
         opacity: 1;
     }
 }
+
+// MEDIA
+@media only screen and (max-width: 1100px) and (min-width: 950px) {
+    body {
+        .container {
+            nav {
+                .logo {
+                    a {
+                        img {
+                            width: 50px;
+                        }
+
+                        p {
+                            padding-left: 10px;
+                            font-size: 25px;
+                        }
+                    }
+                }
+
+                ul {
+                    li {
+                        font-size: 15px;
+                        padding: 34px 0;
+
+                        a {
+
+                            margin: 15px !important;
+                        }
+
+                        .subBar {
+                            left: -95px;
+                            height: 190px;
+
+                            li {
+                                padding: 10px 0;
+                                font-size: 12px;
+
+                                &:first-child {
+                                    padding: 10px;
+                                }
+
+                                a {
+                                    padding: 10px;
+                                }
+                            }
+                        }
+
+                        &:hover>.subBar {
+                            display: block;
+                            top: 48px;
+                        }
+                    }
+                }
+
+                .contactNumber {
+                    p {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// FOR MOBILE DEVICE 

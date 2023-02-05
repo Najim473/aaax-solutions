@@ -16,7 +16,7 @@ body .container nav {
   justify-content: space-evenly;
 }
 body .container nav .logo {
-  padding: 15px;
+  padding: 15px 0;
 }
 body .container nav .logo a {
   text-decoration: none;
@@ -41,7 +41,7 @@ body .container nav ul {
   align-items: center;
 }
 body .container nav ul li {
-  font-size: 15px;
+  font-size: 18px;
   position: relative;
   z-index: 1;
   padding: 34px 0;
@@ -72,6 +72,7 @@ body .container nav ul li .subBar li {
   text-align: center;
   padding: 10px 0;
   cursor: pointer;
+  font-size: 15px;
 }
 body .container nav ul li .subBar li:first-child {
   padding: 15px;
@@ -86,7 +87,7 @@ body .container nav ul li:hover > .subBar {
   top: 48px;
 }
 body .container nav .contactNumber p {
-  font-size: 20px;
+  font-size: 25px;
   color: #ffffff;
 }
 body .container nav .contactNumber p strong {
@@ -116,5 +117,42 @@ body .container nav .contactNumber p strong {
   }
   100% {
     opacity: 1;
+  }
+}
+@media only screen and (max-width: 1100px) and (min-width: 950px) {
+  body .container nav .logo a img {
+    width: 50px;
+  }
+  body .container nav .logo a p {
+    padding-left: 10px;
+    font-size: 25px;
+  }
+  body .container nav ul li {
+    font-size: 15px;
+    padding: 34px 0;
+  }
+  body .container nav ul li a {
+    margin: 15px !important;
+  }
+  body .container nav ul li .subBar {
+    left: -95px;
+    height: 190px;
+  }
+  body .container nav ul li .subBar li {
+    padding: 10px 0;
+    font-size: 12px;
+  }
+  body .container nav ul li .subBar li:first-child {
+    padding: 10px;
+  }
+  body .container nav ul li .subBar li a {
+    padding: 10px;
+  }
+  body .container nav ul li:hover > .subBar {
+    display: block;
+    top: 48px;
+  }
+  body .container nav .contactNumber p {
+    font-size: 20px;
   }
 }/*# sourceMappingURL=main.css.map */
