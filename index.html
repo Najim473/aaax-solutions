@@ -9,7 +9,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     />
-    <title>AAAx Agency</title>
+    <title>ARNx Solutions</title>
   </head>
   <body>
     <div class="container">
@@ -68,19 +68,64 @@
           >
         </div>
         <div class="sidebar">
-          <img src="/asset/icon/cross.svg" alt="Menu" />
+          <svg
+            class="closeBtn"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_2_5742)">
+              <path
+                d="M24 1.414L22.586 0L12 10.586L1.414 0L0 1.414L10.586 12L0 22.586L1.414 24L12 13.414L22.586 24L24 22.586L13.414 12L24 1.414Z"
+                fill="#374957"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_2_5742">
+                <rect width="24" height="24" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+
           <ul>
             <li>Home</li>
             <li>About</li>
             <li>Service</li>
             <li>Contact</li>
           </ul>
-          <img src="/asset/icon/menu.svg" alt="Menu" />
         </div>
-        <div class="contactNumber">
-          <p><strong>+088</strong>&#175;01134323834</p>
+        <svg
+          class="menuBtn"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g clip-path="url(#clip0_2_5199)">
+            <path d="M24 4H0V6H24V4Z" fill="#ffffff" />
+            <path d="M24 9H0V11H24V9Z" fill="#ffffff" />
+            <path d="M24 19H0V21H24V19Z" fill="#ffffff" />
+            <path d="M24 14H0V16H24V14Z" fill="#ffffff" />
+          </g>
+          <defs>
+            <clipPath id="clip0_2_5199">
+              <rect width="24" height="24" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+        <div class="sidebarContact">
+          <p><strong>+088</strong> 01134323834</p>
         </div>
       </div>
     </div>
+    <script>
+      const menuBtn = document.querySelector(".menuBtn");
+      menuBtn.onclick = ()=>{
+        menuBtn.classList.add('active')
+      }
+    </script>
   </body>
 </html>
