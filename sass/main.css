@@ -165,21 +165,26 @@ body .container .mobileSidebar {
   }
   body .container .mobileSidebar {
     display: block;
-  }
-  body .container .sidebar {
     background: #1d2958;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
   }
-  body .container .sidebar .logo a {
+  body .container .logo a {
     text-decoration: none;
     display: flex;
     align-items: center;
   }
-  body .container .sidebar .logo a img {
+  body .container .logo a img {
     width: 50px;
   }
-  body .container .sidebar .logo a p {
+  body .container .logo a p {
     font-size: 30px;
     color: #ffffff;
     margin-left: 15px;
+  }
+  body .container .sidebar {
+    background: #d5d3d3;
   }
 }/*# sourceMappingURL=main.css.map */

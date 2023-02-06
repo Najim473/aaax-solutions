@@ -224,28 +224,33 @@ body {
 
             .mobileSidebar {
                 display: block;
+                background: $primary-color;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 10px;
+            }
+
+            .logo {
+                a {
+                    text-decoration: none;
+                    display: flex;
+                    align-items: center;
+
+                    img {
+                        width: 50px;
+                    }
+
+                    p {
+                        font-size: 30px;
+                        color: #ffffff;
+                        margin-left: 15px;
+                    }
+                }
             }
 
             .sidebar {
-                background: $primary-color;
-
-                .logo {
-                    a {
-                        text-decoration: none;
-                        display: flex;
-                        align-items: center;
-
-                        img {
-                            width: 50px;
-                        }
-
-                        p {
-                            font-size: 30px;
-                            color: #ffffff;
-                            margin-left: 15px;
-                        }
-                    }
-                }
+                background: #d5d3d3;
             }
         }
     }
